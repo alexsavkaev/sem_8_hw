@@ -6,19 +6,19 @@
 # 1. Программа должна выводить данные
 # 2. Программа должна сохранять данные в текстовом файле
 # 3. Пользователь может ввести одну из характеристик для
-# поиска определенной записи(Например имя или фамилию человека)
+#    поиска определенной записи(Например имя или фамилию человека)
 # 4. Использование функций. Ваша программа не должна быть линейной
-import functions as func
+import functions
 
 
 while True:
     print('1. вывод, 2. добавление, 3. поиск')
     mode = int(input())
     if mode == 1:
-        func.show_data()
+        functions.show_data()
     elif mode == 2:
-        func.add_data()
+        functions.add_data()
     elif mode == 3:
-        func.find_data()
+        functions.find_data()
     else:
         break
